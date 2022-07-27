@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>practica12</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+practica12</font>
+</center></td></tr></table>
+<pre><span class="s0">per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}</span>
+
+<span class="s0">money = int(input(&quot;Введите сумму, которую планируете положить под проценты:&quot;))</span>
+
+<span class="s0">TKB = int((per_cent['ТКБ']) * (money/100))</span>
+<span class="s0">SKB = int((per_cent['СКБ']) * (money/100))</span>
+<span class="s0">VTB = int((per_cent['ВТБ']) * (money/100))</span>
+<span class="s0">SBER = int((per_cent['СБЕР']) * (money/100))</span>
+
+<span class="s0">deposit = [TKB, SKB, VTB, SBER]</span>
+
+<span class="s0">print(&quot;Накопленные за год средства вклада в каждом из банков =&quot;,deposit)</span>
+
+<span class="s0">print(&quot;Максимальная сумма, которую вы можете заработать:&quot;, max(deposit))</span>
+
+</pre>
+</body>
+</html>
